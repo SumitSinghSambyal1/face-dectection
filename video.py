@@ -10,7 +10,7 @@ for filename in os.listdir("known"):  # Folder "known" mei saved images
     image = face_recognition.load_image_file(f"known/{filename}")
     encoding = face_recognition.face_encodings(image)[0]
     known_faces.append(encoding)
-    known_names.append(os.path.splitext(filename)[0])  # "rahul.jpg" → "rahul"
+    known_names.append(os.path.splitext(filename)[0])  # "rahul.jpg" → "rahul" 
 
 cap = cv2.VideoCapture(0)
 
